@@ -6,10 +6,6 @@ function calcular() {
   let pagamento1 = Math.round((salario1 / salarioTotal) * conta * 100) / 100;
   let pagamento2 = Math.round((salario2 / salarioTotal) * conta * 100) / 100;
 
-  console.log(
-    `Lucas tem que pagar ${pagamento1} e Luiz tem que pagar ${pagamento2}`
-  );
-
   let mensagem = document.querySelector("h2");
   mensagem.textContent = `A primeira pessoa paga R$${pagamento1} e a segunda paga R$${pagamento2}.`;
 }
